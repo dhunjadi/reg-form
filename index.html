@@ -7,15 +7,24 @@
     <title>Registration Form</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-</head>
-<body>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet"><body>
     <main>
         <form>
-            <input type="email" name="" id="email" placeholder='Enter a valid E-mail address' required>
-            <input type="password" name="" id="password" placeholder='Enter your password' required>
-            <input type="password" name="" id="confirm-password" placeholder='Confirm your password' required>
+                <input type="email" name="" id="email" placeholder='Enter a valid E-mail address' required>
+            <div class="password-input">
+                <input type="password" name="" id="password" placeholder='Enter your password' required> 
+                <span><i class="far fa-eye" id="eye1"></i></span>
+            </div>
+
+            <div class="password-input">
+                <input type="password" name="" id="confirm-password" placeholder='Confirm your password' required>
+                <span><i class="far fa-eye" id="eye2"></i></span>
+            </div>
             <input type="tel" name="" id="phone" placeholder='Enter your phone number'>
+
             <button class="submit-btn">Register</button>
+            <h1>Message</h1>
         </form>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
